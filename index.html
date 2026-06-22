@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-4 offset-4"> -->
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    <label class="fs-2 mt-3 mb-3">Contactos</label>
+                </div>
+                <div>
+                    <label for="txt-nombre" class="form-label">Ingresa el nombre:</label>
+                    <input id="txt-nombre" class="form-control" type="text"/>
+                    <label for="txt-domicilio" class="form-label mt-3">Ingresa el domicilio:</label>
+                    <input id="txt-domicilio" class="form-control" type="text"/>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <input id="btn-aceptar" class="btn btn-primary mt-3" type="button" value="Aceptar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Error -->
+    <div class="modal fade" id="modalError" tabindex="-1" aria-labelledby="modalErrorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="modalErrorLabel">⚠️ Error de Validación</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalErrorBody">
+                    <!-- Mensaje dinámico insertado desde script.js -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
