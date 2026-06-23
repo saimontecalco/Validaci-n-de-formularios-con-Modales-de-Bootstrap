@@ -1,3 +1,9 @@
+/**
+Nombre: Saimon Josue Tecalco Martinez
+Grupo: 06IDPRMA
+Matricula: 2403230384
+*/
+
 var txtNombre = document.getElementById("txt-nombre");
 var txtDomicilio = document.getElementById("txt-domicilio");
 var btnAceptar = document.getElementById("btn-aceptar");
